@@ -135,7 +135,7 @@ func (j *JobRunner) Run(ctx context.Context) {
 	}
 }
 
-// RunParallel runs jobs in parralel.
+// RunParallel runs jobs in parallel.
 func (j *JobRunner) RunParallel(ctx context.Context) {
 	for i := 0; i < j.conf.Parallels; i++ {
 		j.Run(ctx)
